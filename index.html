@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <head>
+      <div class="search_container">
+        <input type="text" id="search_input" placeholder="Искать товары" />
+        <button id="search_button">Поиск</button>
+      </div>
+
+      <div class="container">
+        <div class="cont_right">
+          <div class="products_container"></div>
+        </div>
+
+        <div class="cont_left">
+          <div class="filter">
+            <fieldset>
+              <legend>Категории</legend>
+              <select name="" id="select_category">
+                <option value="">Всё</option>
+                <option value="Одежда">Одежда</option>
+                <option value="Бытовая техника">Бытовая техника</option>
+                <option value="Электроника">Электроника</option>
+                <option value="Канцтовары">Канцтовары</option>
+              </select>
+            </fieldset>
+          </div>
+
+          <div id="cart">
+            <h2 onclick="toggleCart()">Корзина </h2>
+            <div id="cartTotalItems">В корзине: 0 товаров</div>
+            <div id="cartTotalPrice">Общая стоимость: 0 $</div>
+            <ul id="cart-items" style="display: none">
+              <!-- Здесь будут отображаться добавленные товары -->
+            </ul>
+          </div>
+          
+
+
+        </div>
+      </div>
+    </head>
+    <script src="/data.js"></script>
+    <script src="/script.js"></script>
+  </body>
+</html>

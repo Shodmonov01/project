@@ -1,0 +1,28 @@
+.search_container {
+  margin: auto;
+  padding: 50px;
+  text-align: center;
+}
+
+.search_container #search_input {
+  width: 300px;
+}
+
+.container {
+  display: flex;
+}
+
+.filter {
+  width: 200px;
+}
+
+.products_container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 50px;
+  margin: auto 150px;
+}
+
+.product_card {
+  width: 200px;
+}
